@@ -100,6 +100,7 @@ def process_single_pdf(pdf_path, output_dir, model, processor, device):
                 do_sample=True,
             )
             
+            # 추론시간 측정 관련 코드
             torch.cuda.synchronize()
             end_time = time.time()
             elapsed = end_time - start_time
