@@ -160,8 +160,8 @@ def process_single_pdf(pdf_path, output_dir, model, processor, device):
     return total_inference_time
 
 if __name__ == "__main__":
-    input_dir = "../data/inputs/"
-    output_dir = "../data/outputs/olmocr/"
+    input_dir = "./data/inputs/"
+    output_dir = "./data/outputs/olmocr/"
 
     os.makedirs(output_dir, exist_ok=True)
 
